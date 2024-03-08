@@ -1,0 +1,170 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.hero-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/pexels-serena-koi-1576193.jpg");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    text-align: center;
+
+}
+
+.content-container{
+    background-color: unset;
+    height: inherit;
+}
+
+.content:nth-child(odd) {
+    display: flex;
+    justify-content: space-between  ;
+    margin: 2rem 0;
+}
+
+.content:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.content-message {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: start;
+}
+
+.content-message button {
+    border: none;
+    width: 8rem;
+    height: 2rem;
+    background-color: #e89d08;
+    
+}
+
+.content-message button:hover {
+    background-color: #b47c0b;
+    transition: 0.4s;
+}
+
+.content-image img {
+    width: 390px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+
+.accordion-container {
+    background-color: unset;
+    height: unset;
+}
+
+.second-paragraph {
+margin-bottom: 2px;
+}
+
+.accordion {
+    background-color: #cecece;
+    color: #000000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container {
+    background-color:#1d2658; 
+    height: unset;
+    color: white;
+}
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+}
+
+.footer-message {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.footer-icons {
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    color: #e89d08;
+}
+
+.footer-message a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-copyright {
+    margin: auto;
+}
+
+.footer-map {
+    width: 50%;
+    margin: auto;
+}
+
+@media ( width <= 1200px) {
+    .content:nth-child(odd), .content:nth-child(even){
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer-message {
+        width: 100%;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .footer-map {
+        display: none;
+    }
+
+    .content-message {
+        align-items: center;
+    }
+}
+
+/* (=^._.^=) */
+
+@media ( width <= 400px) {
+    .content-image {
+        display: none;
+    }
+    
+    .footer-message {
+        width: 100%;
+        flex-direction: column;
+    }
+
+}
